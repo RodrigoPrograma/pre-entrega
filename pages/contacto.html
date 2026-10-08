@@ -1,23 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Contacto</title>
-  </head>
-  <body>
-    <header>
-      <div><a href="./index.html">LOGO</a></div>
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+<body>
+    <header>
+        <a class="logo" href="./index.html"><img src="../img/Icono panaderia.png" alt="Logo Panadería"></a>
+        <nav class="header-nav">
+            <ul class="main-nav list-unstyled">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./resenas.html">Reseñas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="d-flex flex-column gap-2 hero w-100">
+            <div ></div>
+            <div>
+
+                <h1 class>Contacto</h1>
+                
+                <p>
+                    Lo que opinan nuestros clientes
+                </p>
+                <br>
+            </section>
+
+        <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-column bg-secondary p-2 border-radius">
+                <h2>Contactanos</h2>
+                <p>Si tenes alguna duda o sugerencia, podes contactarnos a traves de este formulario o enviar un correo
+                    a <span class="text-dark">info@nuestraempresa.com.ar</span> </p>
+            </div>
+            <form action="https://formspree.io/f/myezrogq" method="POST"
+                class="d-flex flex-column bg-secondary p-2 border-radius">
+                <label class="d-flex text-dark">
+                    Nombre:
+                    <input type="text" name="name" placeholder="Ricardo" required />
+                </label>
+                <br>
+                <label class="d-flex text-dark">
+                    Email:
+                    <input type="email" name="email" placeholder="Myemail@example.com" required />
+                </label>
+                <br>
+                <label class="d-flex text-dark">
+                    Mensaje:
+                    <textarea name="message" placeholder="Enter your message" required></textarea>
+                </label>
+                <br>
+                <button type="submit" class="btn border-radius">Send</button>
+            </form>
+
+        </div>
+    </main>
     <footer></footer>
-  </body>
+</body>
+
 </html>

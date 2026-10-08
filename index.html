@@ -1,88 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Tienda</title>
-  </head>
-  <body>
-    <header>
-      <div class="div-logo"><a class="logo" href="./index.html">LOGO</a></div>
+</head>
 
-      <nav class="header-nav">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+<body>
+    <header>
+        <a class="logo" href="./index.html"><img src="./img/Icono panaderia.png" alt="Logo Panadería"></a>
+        <nav class="header-nav">
+            <ul class="main-nav list-unstyled">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/resenas.html">Reseñas</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <h1 class="titulo-home text-secondary">Bienvenida a la tienda</h1>
-      <p class="parrafo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta
-        repudiandae nemo asperiores fugit qui necessitatibus unde fugiat
-        expedita possimus in, doloremque tenetur quibusdam corporis dolor
-        commodi. Dolor, quidem aliquam.
-      </p>
+        <section class="d-flex flex-column gap-2 hero w-100">
+            <div ></div>
+            <div>
 
-      <section>
-        <h2 class="titulo-productos text-secondary">Nuestros productos</h2>
-        <div class="contenedor-tarjetas">
-          <article>
-            <img src="./img/budin.jpg" alt="imagen de un budin" />
-            <h3>Budin de limon</h3>
-            <p>Budin glaseado</p>
-            <p>$5000</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
+                <h1 class>El sabor de lo hecho en casa</h1>
+                
+                <p>
+                    Panes, pasteles y delicias artesanales elaborados
+                    con ingredientes seleccionados y mucho cariño.
+                </p>
+                <br>
+                <button class="btn border-radius p-1 " href="./pages/productos.html">
+                    Ver nuestros productos
+                </button>
+            </section>
+            <section>
+                <h2>Tradición, dedicación y sabor</h2>
+            </div>
+                
+            <p>
+                Creemos que las mejores recetas son aquellas que se comparten.
+                Por eso, cada día elaboramos nuestros productos de manera
+                artesanal, cuidando cada detalle desde la selección de los
+                ingredientes hasta el momento en que llegan a tu mesa.
+            </p>
+        </section>
 
-          <article class="card text-dark">
-            <img src="./img/croissant.jpg" alt="imagen croissant" />
-            <h3>Croissant</h3>
-            <p>Croissant crocante</p>
-            <p>$1333</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
+        <section>
 
-          <article class="card text-dark">
-            <img src="./img/pancakes.jpg" alt="imagen pancake" />
-            <h3>Pancake</h3>
-            <p>Descripcion de un pancake</p>
-            <p>$25000</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
-            </button>
-          </article>
+            <h2>Nuestras especialidades</h2>
 
-          <article class="card text-dark">
-            <img src="./img/pan.jpg" alt="imagen de un pan casero" />
-            <h3>Pan casero</h3>
-            <p>Pan de masa madre</p>
-            <p>$3000</p>
-            <button class="btn bg-secondary text-dark">
-              Agregar al carrito
+            <div class="d-flex gap-2">
+
+                <article class="card">
+                    <h3>Panadería</h3>
+
+                    <p>
+                        Panes frescos y elaborados artesanalmente
+                        para acompañar todos tus días.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Pastelería</h3>
+
+                    <p>
+                        Tortas, budines y preparaciones dulces
+                        para disfrutar en cualquier momento.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Dulces y desayunos</h3>
+
+                    <p>
+                        Opciones ideales para comenzar el día
+                        o darte un pequeño gusto.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="d-flex flex-column gap-2">
+
+            <h2>¿Tenés alguna consulta?</h2>
+
+            <p>
+                Estamos para ayudarte. Contactanos para realizar pedidos,
+                consultar disponibilidad o conocer más sobre nuestros productos.
+            </p>
+
+            <button class="btn border-radius p-1" href="./pages/contacto.html">
+                Contactanos
             </button>
-          </article>
-        </div>
-      </section>
+
+        </section>
+
     </main>
-    <footer>
-      <p>Sitio realizado por Belu para Talento Tech</p>
-      <nav>
-        <ul class="footer-list">
-          <li><img src="./img/whatsapp.png" alt="logo-whatsapp" /></li>
-          <li><img src="./img/social.png" alt="logo-instagram" /></li>
-        </ul>
-      </nav>
+    <footer class="pb-2">
+        <p>Panadería artesanal hecha con dedicación</p>
+        <nav >
+            <ul class="footer-list d-flex flex-column">
+                <h3 class="d-flex">Seguinos</h3>
+                <br>
+                <li class="list-unstyled"><a class="text-decoration-none" href="https://www.instagram.com/panaderia_artesanal/" target="_blank" rel="noopener noreferrer">
+                    <p>Instagram</p>
+                </a></li>
+                <li class="list-unstyled"><a class="text-decoration-none" href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                    <p>Facebook</p>
+                </a></li>
+            </ul>
+        </nav>
     </footer>
-  </body>
+</body>
+
 </html>
